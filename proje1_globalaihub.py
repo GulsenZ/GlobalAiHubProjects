@@ -47,7 +47,7 @@ def ogrenci_ekle():
   ogrenci_okul_no = input("Lütfen öğrencinin okul numarasını giriniz: ")
   ogrenci_sinav_notu = int(input("Lütfen öğrencinin sınav notunu giriniz: "))
 
-  if ogrenci_sinav_notu > 100 or ogrenci_sinav_notu < 0:
+  while ogrenci_sinav_notu > 100 or ogrenci_sinav_notu < 0:
       ogrenci_sinav_notu = int(input("Öğrenci notu 0 ile 100 arasında olmalıdır! Lütfen öğrencinin sınav notunu giriniz: "))
   
 
